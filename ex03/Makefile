@@ -1,9 +1,13 @@
 CFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
 CXX		= c++
-NAME	= minimal_makefile
+NAME	= diamond_trap.out
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f
-SRCS	= main.cpp
+SRCS	= main.cpp \
+		  ClapTrap.cpp \
+		  ScavTrap.cpp \
+		  FragTrap.cpp \
+		  DiamondTrap.cpp
 
 all: $(NAME)
 

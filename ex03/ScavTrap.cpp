@@ -37,6 +37,10 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& rhs) {
 ScavTrap::~ScavTrap() { std::cout << "ScavTrap [" << name << "] Destructor called" << std::endl; }
 
 // ---- Public methods
+void ScavTrap::attack(std::string const& target) {
+	std::cout << "ScavTrap " << name << " attack " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
+}
+
 void ScavTrap::guardGate(void) {
 	std::cout << "ScavTrap " << name << " has entered gate keeper mode!" << std::endl;
 }
