@@ -51,6 +51,11 @@ int main(void) {
 	spy.attack("Chandler");
 	heavy.attack("Chandler");
 
+	std::cout << std::endl << "---- Call attack() on DiamondTraps ----" << std::endl;
+	saphire.attack("Chris");
+	rock.attack("Chris");
+	glass.attack("Chris");
+
 	std::cout << std::endl << "---- Call takeDamage() on ClapTraps ----" << std::endl;;
 	atlas.takeDamage(25);
 	weathley.takeDamage(25);
@@ -65,6 +70,12 @@ int main(void) {
 	jinx.takeDamage(25);
 	spy.takeDamage(25);
 	heavy.takeDamage(25);
+
+	std::cout << std::endl << "---- Call takeDamage() on DiamondTraps ----" << std::endl;
+	saphire.takeDamage(25);
+	rock.takeDamage(25);
+	glass.takeDamage(25);
+
 
 	std::cout << std::endl << "---- Call beRepaired() on ClapTraps ----" << std::endl;;
 	atlas.beRepaired(25);
@@ -81,22 +92,33 @@ int main(void) {
 	spy.beRepaired(25);
 	heavy.beRepaired(25);
 
+	std::cout << std::endl << "---- Call beRepaired() on DiamondTraps ----" << std::endl;
+	saphire.beRepaired(25);
+	rock.beRepaired(25);
+	glass.beRepaired(25);
 
 	std::cout << std::endl << "---- Call guardGate() on ScavTraps ----" << std::endl;
 	rhino.guardGate();
 	glados.guardGate();
 	chell.guardGate();
 
+	std::cout << std::endl << "---- Call guardGate() on DiamondTraps ----" << std::endl;
+	saphire.guardGate();
+	rock.guardGate();
+	glass.guardGate();
+
 	std::cout << std::endl << "---- Call highFivesGuys() on FragTraps ----" << std::endl;
 	jinx.highFivesGuys();
 	spy.highFivesGuys();
 	heavy.highFivesGuys();
 
+	std::cout << std::endl << "---- Call highFivesGuys() on DiamondTraps ----" << std::endl;
+	saphire.highFivesGuys();
+	rock.highFivesGuys();
+	glass.highFivesGuys();
+	
 	std::cout << std::endl << "---- Call whoAmI() on DiamondTraps ----" << std::endl;
 	saphire.whoAmI();
-	ruby.whoAmI();
-	notRuby.whoAmI();
-	notRubyAgain.whoAmI();
 	rock.whoAmI();
 	glass.whoAmI();
 	

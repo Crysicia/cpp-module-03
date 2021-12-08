@@ -1,4 +1,4 @@
-CFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
+CFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra -Wshadow#-Wshadow 
 CXX		= c++
 NAME	= diamond_trap.out
 OBJS	= $(SRCS:.cpp=.o)

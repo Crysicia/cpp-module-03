@@ -37,6 +37,11 @@ FragTrap& FragTrap::operator=(const FragTrap& rhs) {
 FragTrap::~FragTrap() { std::cout << "FragTrap [" << name << "] Destructor called" << std::endl; }
 
 // ---- Public methods
+
+void FragTrap::attack(std::string const& target) {
+	std::cout << "FragTrap " << name << " attack " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
+}
+
 void FragTrap::highFivesGuys(void) {
 	std::cout << "FragTrap " << name << " (Raising its hand): Hey guys, high five !" << std::endl;
 }
