@@ -1,22 +1,22 @@
 #include "FragTrap.hpp"
 
-#define DEFAULT_HIT_POINTS 100
-#define DEFAULT_ENERGY_POINTS 100
-#define DEFAULT_ATTACK_DAMAGE 30
+#define DEFAULT_FRAG_TRAP_HIT_POINTS 100
+#define DEFAULT_FRAG_TRAP_ENERGY_POINTS 100
+#define DEFAULT_FRAG_TRAP_ATTACK_DAMAGE 30
 
 // ---- Default constructors and operators overloading
 FragTrap::FragTrap() : ClapTrap("Oopsy") {
-	hitPoints = DEFAULT_HIT_POINTS;
-	energyPoints = DEFAULT_ENERGY_POINTS;
-	attackDamage = DEFAULT_ATTACK_DAMAGE;
+	hitPoints = DEFAULT_FRAG_TRAP_HIT_POINTS;
+	energyPoints = DEFAULT_FRAG_TRAP_ENERGY_POINTS;
+	attackDamage = DEFAULT_FRAG_TRAP_ATTACK_DAMAGE;
 
 	std::cout << "FragTrap [" << name << "] Default constructor called" << std::endl;
 }
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name) { 
-	hitPoints = DEFAULT_HIT_POINTS;
-	energyPoints = DEFAULT_ENERGY_POINTS;
-	attackDamage = DEFAULT_ATTACK_DAMAGE;
+	hitPoints = DEFAULT_FRAG_TRAP_HIT_POINTS;
+	energyPoints = DEFAULT_FRAG_TRAP_ENERGY_POINTS;
+	attackDamage = DEFAULT_FRAG_TRAP_ATTACK_DAMAGE;
 
 	std::cout << "FragTrap [" << name << "] Default constructor called" << std::endl;
 }
