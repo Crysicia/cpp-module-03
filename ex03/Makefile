@@ -1,4 +1,4 @@
-CFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra -Wshadow#-Wshadow 
+CXXFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
 CXX		= c++
 NAME	= diamond_trap.out
 OBJS	= $(SRCS:.cpp=.o)
@@ -12,10 +12,10 @@ SRCS	= main.cpp \
 all: $(NAME)
 
 %.o: %.cpp
-	$(CXX) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
-	$(CXX) $(CFLAGS) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 clean:
 	$(RM) $(OBJS)
